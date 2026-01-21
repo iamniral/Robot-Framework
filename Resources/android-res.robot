@@ -88,6 +88,7 @@ Submit Login
         Click Element    ${SignIn-Button}
 
 Verify Login is Successfull
+    Sleep       5s
     Wait Until Element Is Visible       ${Home-Message-Description}
 
 Logout With User
@@ -98,20 +99,25 @@ Logout With User
     Verify Logout is Successful
 
 Go Menu page
-    Click Element       ${Menu-Settings-Button}
+    Sleep    5s
+    Click Element       ${Home-Menu-Button}
 
 Click on Settings button
+    Sleep    5s
     Click Element       ${Menu-Settings-Button}
 
 Click on Samsung Account
+    Sleep    5s
     Click Element       ${Settings-Samsung-Account}
 
 Click on Signout button
+    Sleep    5s
     Click Element       ${Account-Signout-Button}
     Wait Until Element Is Visible   ${Account-Sync-Signout-Button}
     Click Element       ${Account-Sync-Signout-Button}
 
 Verify Logout is Successful
+    Sleep    5s
     Wait Until Element Is Visible       ${Setting-SmartThins-Settings-Title}
 
 
