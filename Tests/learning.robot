@@ -32,13 +32,18 @@ TEST
     log    ${LIST}[1]
     log    ${DICTIONARY}[Username]
     log    ${DICTIONARY}[Password]
+
+
+Verify Log my username and password
     Log My Username
     Log My PASSWORD
+
+
+
     Log My Username & PASSWORD
     Log My Specific Username    ${DICTIONARY}[Username]
     Log My Specific Username    ${DICTIONARY2}[Username]
     Log My Specific Username & Password     ${DICTIONARY}[Username]     ${DICTIONARY}[Password]
-
 
 
 
