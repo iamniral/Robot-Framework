@@ -23,7 +23,7 @@ Track Daily Expenses And Generate Report
     # Initialize Tracking Variables
     ${total_expense}=    Set Variable    ${0}
     ${highest_amount}=   Set Variable    ${0}
-    ${highest_category}= Set Variable    None
+    ${highest_category}=    Set Variable    None
 
     # 3. Iterate through expense categories using the list variable
     FOR    ${category}    IN    @{CATEGORIES_LIST}
